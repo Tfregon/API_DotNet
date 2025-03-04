@@ -1,0 +1,14 @@
+# .NET Core
+.vs
+.vscode
+bin/
+obj/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
