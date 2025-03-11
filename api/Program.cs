@@ -25,6 +25,12 @@ app.MapGet("/home", () =>
 })
 .WithName("home");
 
+app.MapGet("/{price}/{tax}", (double price, double tax) =>
+{
+    var final = price + (price * tax);
+    return new {price, tax, final};
+})
+.WithName("tax");
 
 app.MapGet("/weatherforecast", () =>
 {
